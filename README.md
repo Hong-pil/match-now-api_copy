@@ -27,6 +27,28 @@ pnpm install
 pnpm run build
 npm run pm2:start:local
 
+
+
+### Ubuntu Node.js v22 설치
+# 시스템 패키지 업데이트
+sudo apt update && sudo apt upgrade -y
+
+# curl 설치 (없는 경우)
+sudo apt install -y curl
+
+# NodeSource 저장소 추가 (Node.js 22.x용)
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+
+# Node.js 설치
+sudo apt-get install -y nodejs
+
+# 설치 확인
+node --version
+npm --version
+
+
+
+
 ### MongoDB 설치 및 실행
 # macOS (Homebrew 사용)
 $ brew tap mongodb/brew
